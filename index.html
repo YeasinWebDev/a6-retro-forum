@@ -17,7 +17,8 @@
 </head>
 
 <body>
-    <nav class="nav lg:mb-10 text-black flex flex-col md:flex-row justify-between align-middle items-center px-10  py-5">
+    <nav
+        class="nav lg:mb-10 text-black flex flex-col md:flex-row justify-between align-middle items-center px-10  py-5">
         <div class="left">
             <h1 class="font-bold text-2xl text-[#12132D]">Data Forum</h1>
         </div>
@@ -47,7 +48,8 @@
     </nav>
 
     <main>
-        <div class="heroSec  text-black flex flex-col md:flex-row justify-center gap-5 md:gap-20 items-center px-4 md:px-20 md:w-fit mx-auto h-[150vw] md:h-[25vw] bg-[#12132D] md:rounded-lg">
+        <div
+            class="heroSec  text-black flex flex-col md:flex-row justify-center gap-5 md:gap-20 items-center px-4 md:px-20 md:w-fit mx-auto h-[150vw] md:h-[25vw] bg-[#12132D] md:rounded-lg">
             <div class="left bg-transparent p-3 text-white">
                 <h1 class="font-bold text-4xl bg-transparent">
                     Welcome to the <span class="bg-transparent">Data Forum</span>
@@ -55,9 +57,10 @@
                 <p class="py-4 bg-transparent w-[80%] md:w-full">
                     Share your favorite opinion and win a forum coffee mug!
                 </p>
-        
+
                 <div class="inputSec bg-white p-2 md:px-4 md:py-2 rounded-xl flex justify-between">
-                    <input type="text" placeholder="Search Here Anything" id="input" class="flex-1 border-none outline-none text-black font-semibold md:text-xl">
+                    <input type="text" placeholder="Search Here Anything" id="input"
+                        class="flex-1 border-none outline-none text-black font-semibold md:text-xl">
                     <button id="search" class="bg-[#797DFC] p-4 rounded-lg">search</button>
                 </div>
             </div>
@@ -85,15 +88,78 @@
         <div class="discuss mt-10 md:mt-20 px-10 md:px-0">
             <div class="top items-center flex flex-col text-black">
                 <h1 class="font-bold text-2xl md:text-3xl">Les't Discuss</h1>
-                <p class="md:w-[30%] pt-4 text-center">
-                    Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+                <p class="md:w-[30%] pt-4 text-center pb-3">
+                    Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                    features allow for a streamlined .
                 </p>
             </div>
 
-            
+            <!-- content -->
+            <div class="content text-black flex flex-col md:flex-row md:justify-center gap-20 mt-10 md:mt-0">
+                
+                <div class="left flex flex-col bg-[#f3f3f5] md:p-10 md:w-fit w-[130%] ml-[-35px] md:ml0" id="left"> 
+                    <div class="bg-[#f3f3f5] p-10 border-b-2 border-black border-dashed">
+                        <div class="img w-10 h-10 mr-4 rounded-lg relative bg-transparent m-4 md:m-0">
+                            <div class="dot w-4 h-4 bg-red-800 rounded-full absolute right-[-8px] top-[-8px]"></div>
+                            <img class="w-full h-full rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9XC8asLaxxAvYomjBweLtnQkkD5dm7Y6Z6b6547YeoQ&s" alt="">
+                        </div> 
+                        <div class="text">
+                            <div class="top">
+                                <div class="tag bg-[#f3f3f5] font-bold"># Music</div>
+                                <h1 class="bg-[#f3f3f5] py-3 font-bold text-xl">
+                                    10 Kids Unaware of Their Halloween Costume
+                                </h1>
+                                <p class=" bg-[#f3f3f5] py-2">
+                                    It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s
+                                    your prerogative
+                                </p>
+                            </div>
+                            <div class="bottom flex bg-[#f3f3f5] md:pt-2">
+                                <div class="flex gap-3 items-center bg-[#f3f3f5] text-xl">
+                                    <i class="fa-regular fa-message bg-[#f3f3f5]"></i>
+                                    <span class="mb-1 bg-[#f3f3f5]">10</span>
+                                </div>
+                                <div class="flex gap-3 items-center mx-10 bg-[#f3f3f5] text-xl">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span class="mb-1 bg-[#f3f3f5]">10</span>
+                                </div>
+                                <div class="flex gap-3 items-center bg-[#f3f3f5] text-xl">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span class="mb-1 bg-[#f3f3f5]">10</span>
+                                </div>
+                                <div class=" text-xl md:ml-80 w-10 h-10 flex justify-center items-center rounded-full cursor-pointer bg-white ">
+                                    <i class="fa-solid fa-envelope-open" style="color: #63E6BE;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right bg-[#f3f3f5] p-4 ">
+                    <div class="top flex gap-10 bg-[#f3f3f5] justify-between">
+                        <h1 class="bg-[#f3f3f5] font-bold">Title</h1>
+                        <h1 class="bg-[#f3f3f5]">Mark as read <span class="bg-[#f3f3f5]">(4)</span></h1>
+                    </div>
+
+                    <div id="content" class="mt-10 bg-[#f3f3f5] h-fit">
+                        <div class="flex bg-[#f3f3f5] ">
+                            <h1 class="bg-[#f3f3f5] text-xl">
+                                10 Kids Unaware of Their Halloween Costume
+                            </h1>
+                            <div class="icon bg-[#f3f3f5] ml-10 text-xl">
+                                <i class="fa-regular fa-eye"></i>
+                                    <span class="mb-1 bg-[#f3f3f5]">10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
         </div>
-        
+
     </main>
 </body>
 
 </html>
+
+
+<!-- class=" flex flex-col md:flex-row  bg-[#f3f3f5] p-10 w-fit ml-[-35px] md:ml-0 md:mt-2 " -->
