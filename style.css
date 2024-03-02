@@ -1,0 +1,9 @@
+*{
+    background-color: #fff;
+}
+
+.heroSec{
+    background-image: url('/img/bgbanner.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
