@@ -1,6 +1,9 @@
 
 
 const fetchData = async (type) => {
+    const spinner = document.querySelector('.spinner');
+    spinner.style.display = 'block';
+    console.log(type);
     let data
     if (type) {
         data = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${type}`);
@@ -10,14 +13,17 @@ const fetchData = async (type) => {
 
     const res = await data.json();
     // const posts = res(item  => item)
+    setTimeout(() => {
+        spinner.style.display = 'none';
+    }, 2000);
     showingData(res.posts)
-    // console.log(res.posts);
+    console.log(res.posts);
 }
 
 
 const showingData = (data) => {
     const container = document.querySelector(".contentLeft")
-
+    container.innerHTML = ''
     data.map((item) => {
         const div = document.createElement("div");
         div.classList = "bg-[#f3f3f5] p-10 border-b-2 border-black border-dashed"
@@ -95,10 +101,8 @@ function addData(title, view_count) {
 const latestPosts = async () => {
     const data = await fetch(" https://openapi.programming-hero.com/api/retro-forum/latest-posts");
     const res = await data.json();
-    console.log(res);
     latestData(res)
 }
-
 
 const latestData = (data) => {
     const PostBottom = document.querySelector(".PostBottom")
@@ -136,5 +140,16 @@ const latestData = (data) => {
 
 }
 
+
+// fetching data by search 
+function searchBar() {
+    const inputfild = document.getElementById("input")
+    const searchbtn = document.getElementById("searchbtn")
+
+    searchbtn.addEventListener("click", () => {
+        fetchData(inputfild.value)
+    })
+}
+searchBar()
 latestPosts()
 fetchData()
